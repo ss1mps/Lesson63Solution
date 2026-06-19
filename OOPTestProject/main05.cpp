@@ -1,7 +1,7 @@
 #include "Student.h"
 
 int main() {
-	{
+
 		Student* st01 = new Student("Alex", 14, 'm', 9.5, true);
 		Student* st02 = new Student("Olya", 15, 'm', 7.8, true);
 		Student* st03 = new Student;
@@ -16,7 +16,12 @@ int main() {
 		cout << st03->toString() << endl;
 		cout << st04->toString() << endl;
 		cout << st05->toString() << endl;
-	}
+
+		delete st01;
+		delete st02;
+		delete st03;
+		delete st04;
+		delete st05;
 
 	return 0;
 }
