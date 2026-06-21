@@ -88,6 +88,14 @@ public:
 
 	}
 
+	string getName() {
+		return name;
+	}
+
+	void setName(string nm) {
+		name = nm;
+	}
+
 	string toString() {
 		string s = "";
 
