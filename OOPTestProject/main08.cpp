@@ -1,4 +1,4 @@
-#include "Menager.h"
+#include "menager.h"
 
 int main() {
 
@@ -8,20 +8,20 @@ int main() {
 	int* marks04 = new int[5]{ 7, 9, 10, 10, 9};
 	int* marks05 = new int[6]{ 8, 9, 10, 8, 8, 8};
 
-	Student* st01 = new Student("Alex", 14, 'm', true, marks01, 2);
-	Student* st02 = new Student("Anna", 13, 'f', true, marks02, 3);
-	Student* st03 = new Student("Happy", 13, 'm', true, marks03, 4);
-	Student* st04 = new Student("Alice", 13, 'f', true, marks04, 5);
-	Student* st05 = new Student("Peter", 13, 'm', true, marks05, 6);
+	student* st01 = new student("alex", 14, 'm', true, marks01, 2);
+	student* st02 = new student("anna", 13, 'f', true, marks02, 3);
+	student* st03 = new student("happy", 13, 'm', true, marks03, 4);
+	student* st04 = new student("alice", 13, 'f', true, marks04, 5);
+	student* st05 = new student("peter", 13, 'm', true, marks05, 6);
 
 
-	Student** group = new Student * [5]{ st01, st02, st03, st04, st05 };
+	student** group = new student * [5]{ st01, st02, st03, st04, st05 };
 
-	Menager* menager = new Menager();
+	menager* menager = new menager();
 
-	cout << "Average mark of student's list is " << menager->calculateAvgMark(group, 5) << endl;
+	cout << "average mark of student's list is " << menager->calculateavgmark(group, 5) << endl;
 
-	delete group;
+	delete[] group;
 
 	delete st01;
 	delete st02;
