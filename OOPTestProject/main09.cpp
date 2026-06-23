@@ -6,8 +6,6 @@
 //
 //	Student* st01 = new Student("Alex", 14, 'm', true, marks01, 2);
 //
-//	st01->getAge();
-//
 //	delete st01;
 //
 //	return 0;
