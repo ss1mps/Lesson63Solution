@@ -4,7 +4,8 @@
 using namespace std;
 
 class Student {
-public:
+private:
+
 	string name;
 	int age;
 	//double mark;
@@ -12,6 +13,8 @@ public:
 	bool alive;
 	int* marks;
 	int count;
+
+public:
 
 	Student() {
 		cout << "Students default constructor\n";
@@ -94,6 +97,52 @@ public:
 
 	void setName(string nm) {
 		name = nm;
+	}
+
+	int getAge() {
+		return age;
+	}
+
+	void setAge(int a) {
+		if (a > 0) {
+			age = a;
+		}
+	}
+
+	char getGender() {
+		return gender;
+	}
+
+	void setGender(char g) {
+		if (g == 'm' || g == 'f') {
+			gender = g;
+		}
+	}
+
+	bool isAlive() {
+		return alive;
+	}
+
+	void setAlive(bool a) {
+		alive = a;
+	}
+
+	int getCountMark() {
+		return count;
+	}
+
+	int* getMarks() {
+		return marks;
+	}
+
+	void setMarks(int* m, int c) {
+		if (c > 0 && m != nullptr) {
+			if (marks != nullptr) {
+				delete[] marks;
+			}
+			marks = m;
+			count = c;
+		}
 	}
 
 	string toString() {
