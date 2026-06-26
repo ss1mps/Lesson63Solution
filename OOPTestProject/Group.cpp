@@ -44,6 +44,16 @@ Student* Group::getStudent(int index) {
 	}
 	return nullptr;
 }
+Group::Group(const Group* group) {
+	name = group->name;
+	count = group->count;
+	list = new Student* [group->count];
+
+	for (int i = 0; i < group->count; i++)
+	{
+		list[i] = group->list[i];
+	}
+}
 void Group::addStudent(Student* student) {
 	if (count == 0 && list == nullptr) {
 		list = new Student * [1];

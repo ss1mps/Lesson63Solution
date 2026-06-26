@@ -14,7 +14,7 @@
 //
 //	for (int i = 0; i < 5; i++)
 //	{
-//		*(st01->marks + 1) = 10;
+//		*(st01->getMarks() + i) = 10;
 //	}
 //
 //	cout << "After:\n";
