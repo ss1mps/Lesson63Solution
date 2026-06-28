@@ -18,31 +18,31 @@ public:
 
 	Student();
 
-	Student(string nm, int ag);
+	Student(string name, int age);
 
-	Student(int ag, string nm);
+	Student(int age, string name);
 
-	Student(string nm, int ag, char gndr, bool a, int* mrks, int cnt);
+	Student(string name, int age, char gender, bool alive, int* marks, int count);
 
 	Student(const Student* student);
 
 	~Student();
 
 	string getName();
-	void setName(string nm);
+	void setName(string name);
 
 	int getAge();
-	void setAge(int a);
+	void setAge(int age);
 
 	char getGender();
-	void setGender(char g);
+	void setGender(char gender);
 
 	bool isAlive();
-	void setAlive(bool a);
+	void setAlive(bool alive);
 
 	int getCountMark();
 	int* getMarks();
-	void setMarks(int* m, int c);
+	void setMarks(int* marks, int count);
 
 	string toString();
 };
