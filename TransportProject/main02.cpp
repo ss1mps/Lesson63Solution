@@ -24,12 +24,10 @@ int main() {
 
 	delete[] transports;
 
-	delete[] cars;
 	delete car01;
 	delete car02;
 	delete car03;
 
-	delete[] buses;
 	delete bus01;
 	delete bus02;
 
